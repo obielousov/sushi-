@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<style data-fls-preloader="true" rel="preload">
+			body > *:not(.fls-preloader) {opacity: 0;visibility: hidden;}[data-fls-preloader-loaded] body > *:not(.fls-preloader) {transition: opacity 0.5s ease 0s;opacity: 1;visibility: visible;}
+		</style>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preload" href="./assets/fonts/Satoshi-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Satoshi-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Forum-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="shortcut icon" href="./assets/img/favicon.ico">
+		<title>Menu</title>
+		<script type="module" crossorigin="" src="./js/menupage.js?v=1783603820903"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/preloader.js?v=1783603820903">
+		<link rel="modulepreload" crossorigin="" href="./js/watcher.js?v=1783603820903">
+		<link rel="stylesheet" crossorigin="" href="./css/preloader.css?v=1783603820903">
+		<link rel="stylesheet" crossorigin="" href="./css/menupage.css?v=1783603820903">
+		<link rel="stylesheet" crossorigin="" href="./css/title.css?v=1783603820903">
+		<link rel="stylesheet" crossorigin="" href="./css/inner.css?v=1783603820903">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header data-fls-header="" class="header">
+				<div class="header__container">
+					<div class="header__menu menu">
+						<button type="button" data-fls-menu="" class="menu__icon icon-menu" aria-label="Toggle menu">
+							<span></span>
+						</button>
+						<a href="/" class="header__logo">
+							<img src="./assets/img/logo.svg" alt="Qitchen">
+						</a>
+						<nav class="header__nav">
+							<a href="menupage.html" class="header__link">Menu</a>
+							<a href="about.html" class="header__link">About</a>
+						</nav>
+						<a href="reservation.html" class="header__cta">Book a Table</a>
+					</div>
+					<nav class="menu__body">
+						<div class="menu__container">
+							<div class="menu__decor">
+								<span class="menu__diamond"></span>
+								<span class="menu__line"></span>
+								<span class="menu__diamond"></span>
+							</div>
+							<ul class="menu__list">
+								<li>
+									<a href="menupage.html">Menu</a>
+								</li>
+								<li>
+									<a href="reservation.html">Reservation</a>
+								</li>
+								<li>
+									<a href="about.html">About</a>
+								</li>
+								<li>
+									<a href="contact.html">Contact</a>
+								</li>
+								<li>
+									<a href="blog.html">Blog</a>
+								</li>
+							</ul>
+							<div class="menu__decor">
+								<span class="menu__diamond"></span>
+								<span class="menu__line"></span>
+								<span class="menu__diamond"></span>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</header>
+			<section class="inner-page">
+				<div data-fls-pagebg="" class="pagebg">
+					<div class="pagebg__picture">
+						<picture>
+							<source media="(max-width: 600px)" srcset="./assets/img/menu/menubg-600.webp" type="image/webp">
+							<img alt="Menu background" class="pagebg__image" src="./assets/img/menu/menubg.webp">
+						</picture>
+					</div>
+					<h1 class="pagebg__title">Menu</h1>
+				</div>
+				<div class="inner-page__body">
+					<div data-fls-menupage="" class="menu-page__body body-menu">
+						<nav class="body-menu__header" aria-label="Menu categories">
+							<button data-fls-scrollto="#maki" data-fls-scrollto-header="" class="body-menu__button" aria-label="Scroll to Maki section">Maki</button>
+							<button data-fls-scrollto="#uramaki" data-fls-scrollto-header="" class="body-menu__button" aria-label="Scroll to UraMaki section">UraMaki</button>
+							<button data-fls-scrollto="#specials" data-fls-scrollto-header="" class="body-menu__button" aria-label="Scroll to Special Rolls section">Special Rolls</button>
+						</nav>
+						<div class="body-menu__content">
+							<section class="body-menu__item" aria-labelledby="maki">
+								<h2 data-fls-watcher="navigator" id="maki" data-fls-title="" class="body-menu-section__title section__title section__title--fz-32">Maki</h2>
+								<ul class="body-menu__items">
+									<li class="body-menu__item">
+										<a href="#" data-fls-menuitem="" class="item-menu item-menu__link" aria-label="Spicy Tuna Maki — $5">
+											<div class="item-menu__picture">
+												<picture>
+													<img alt="Spicy Tuna Maki" loading="lazy" src="./assets/img/menu/menu01.webp">
+												</picture>
+											</div>
+											<div class="item-menu__content">
+												<div class="item-menu__title">
+													<h3 class="item-menu__value --icon-leaf">Spicy Tuna Maki</h3>
+													<span class="item-menu__price">$5</span>
+												</div>
+												<div class="item-menu__text">
+													<p>
+														A tantalizing blend of spicy tuna, cucumber, and avocado, harmoniously rolled in nori and seasoned rice.
+													</p>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="body-menu__item">
+										<a href="#" data-fls-menuitem="" class="item-menu item-menu__link" aria-label="Mango Maki — $5">
+											<div class="item-menu__picture">
+												<picture>
+													<img alt="Mango Maki" loading="lazy" src="./assets/img/menu/menu02.webp">
+												</picture>
+											</div>
+											<div class="item-menu__content">
+												<div class="item-menu__title">
+													<h3 class="item-menu__value">Mango Maki</h3>
+													<span class="item-menu__price">$5</span>
+												</div>
+												<div class="item-menu__text">
+													<p>
+														Tempura-fried shrimp, cucumber, and cream cheese embrace a center of fresh avocado, delivering a satisfying contrast of textures.
+													</p>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="body-menu__item">
+										<a href="#" data-fls-menuitem="" class="item-menu item-menu__link" aria-label="Salmon Maki — $5">
+											<div class="item-menu__picture">
+												<picture>
+													<img alt="Salmon Maki" loading="lazy" src="./assets/img/menu/menu03.webp">
+												</picture>
+											</div>
+											<div class="item-menu__content">
+												<div class="item-menu__title">
+													<h3 class="item-menu__value">Salmon Maki</h3>
+													<span class="item-menu__price">$5</span>
+												</div>
+												<div class="item-menu__text">
+													<p>
+														Shiitake mushrooms, avocado, and pickled daikon radish nestle within a roll of seasoned rice, coated with nutty sesame seeds.
+													</p>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="body-menu__item">
+										<a href="#" data-fls-menuitem="" class="item-menu item-menu__link" aria-label="Tuna Maki — $5">
+											<div class="item-menu__picture">
+												<picture>
+													<img alt="Tuna Maki" loading="lazy" src="./assets/img/menu/menu04.webp">
+												</picture>
+											</div>
+											<div class="item-menu__content">
+												<div class="item-menu__title">
+													<h3 class="item-menu__value">Tuna Maki</h3>
+													<span class="item-menu__price">$5</span>
+												</div>
+												<div class="item-menu__text">
+													<p>
+														A vibrant assortment of julienned carrots, bell peppers, and cucumber, tightly encased in a nori-wrapped rice roll.
+													</p>
+												</div>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</section>
+							<section class="body-menu__item" aria-labelledby="uramaki" data-fls-watcher="" data-fls-watcher-once="">
+								<h2 data-fls-watcher="navigator" id="uramaki" data-fls-title="" class="body-menu-section__title section__title section__title--fz-32">UraMaki</h2>
+								<ul class="body-menu__items">
+									<li class="body-menu__item">
+										<a href="#" data-fls-menuitem="" class="item-menu item-menu__link" aria-label="Volcano Delight — $12">
+											<div class="item-menu__picture">
+												<picture>
+													<img alt="Volcano Delight" loading="lazy" src="./assets/img/menu/menu05.webp">
+												</picture>
+											</div>
+											<div class="item-menu__content">
+												<div class="item-menu__title">
+													<h3 class="item-menu__value --icon-leaf">Volcano Delight</h3>
+													<span class="item-menu__price">$12</span>
+												</div>
+												<div class="item-menu__text">
+													<p>
+														Creamy crab salad, avocado, and cucumber rolled inside, topped with spicy tuna and drizzled with fiery sriracha sauce.
+													</p>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="body-menu__item">
+										<a href="#" data-fls-menuitem="" class="item-menu item-menu__link" aria-label="Rainbow Fusion — $12">
+											<div class="item-menu__picture">
+												<picture>
+													<img alt="Rainbow Fusion" loading="lazy" src="./assets/img/menu/menu06.webp">
+												</picture>
+											</div>
+											<div class="item-menu__content">
+												<div class="item-menu__title">
+													<h3 class="item-menu__value">Rainbow Fusion</h3>
+													<span class="item-menu__price">$12</span>
+												</div>
+												<div class="item-menu__text">
+													<p>
+														A colorful blend of fresh tuna, salmon, yellowtail, and avocado, enveloping a core of cucumber and crab stick.
+													</p>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="body-menu__item">
+										<a href="#" data-fls-menuitem="" class="item-menu item-menu__link" aria-label="Dragon Elegance — $12">
+											<div class="item-menu__picture">
+												<picture>
+													<img alt="Dragon Elegance" loading="lazy" src="./assets/img/menu/menu07.webp">
+												</picture>
+											</div>
+											<div class="item-menu__content">
+												<div class="item-menu__title">
+													<h3 class="item-menu__value">Dragon Elegance</h3>
+													<span class="item-menu__price">$12</span>
+												</div>
+												<div class="item-menu__text">
+													<p>
+														Grilled eel and avocado nestled within the roll, draped with slices of ripe avocado resembling dragon scales.
+													</p>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="body-menu__item">
+										<a href="#" data-fls-menuitem="" class="item-menu item-menu__link" aria-label="Sunset Serenity — $12">
+											<div class="item-menu__picture">
+												<picture>
+													<img alt="Sunset Serenity" loading="lazy" src="./assets/img/menu/menu08.webp">
+												</picture>
+											</div>
+											<div class="item-menu__content">
+												<div class="item-menu__title">
+													<h3 class="item-menu__value">Sunset Serenity</h3>
+													<span class="item-menu__price">$12</span>
+												</div>
+												<div class="item-menu__text">
+													<p>
+														Tempura shrimp, cucumber, and spicy mayo embraced by a roll of soy paper, crowned with slices of creamy mango.
+													</p>
+												</div>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</section>
+							<section class="body-menu__item" aria-labelledby="specials" data-fls-watcher="" data-fls-watcher-once="">
+								<h2 data-fls-watcher="navigator" id="specials" data-fls-title="" class="body-menu-section__title section__title section__title--fz-32">Special Rolls</h2>
+								<ul class="body-menu__items">
+									<li class="body-menu__item">
+										<a href="#" data-fls-menuitem="" class="item-menu item-menu__link" aria-label="Sunrise Bliss — $16">
+											<div class="item-menu__picture">
+												<picture>
+													<img alt="Sunrise Bliss" loading="lazy" src="./assets/img/menu/menu09.webp">
+												</picture>
+											</div>
+											<div class="item-menu__content">
+												<div class="item-menu__title">
+													<h3 class="item-menu__value --icon-leaf">Sunrise Bliss</h3>
+													<span class="item-menu__price">$16</span>
+												</div>
+												<div class="item-menu__text">
+													<p>
+														A delicate combination of fresh salmon, cream cheese, and asparagus, rolled in orange-hued tobiko for a burst of sunrise-inspired flavors.
+													</p>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="body-menu__item">
+										<a href="#" data-fls-menuitem="" class="item-menu item-menu__link" aria-label="Mango Tango Fusion — $16">
+											<div class="item-menu__picture">
+												<picture>
+													<img alt="Mango Tango Fusion" loading="lazy" src="./assets/img/menu/menu10.webp">
+												</picture>
+											</div>
+											<div class="item-menu__content">
+												<div class="item-menu__title">
+													<h3 class="item-menu__value --icon-leaf">Mango Tango Fusion</h3>
+													<span class="item-menu__price">$16</span>
+												</div>
+												<div class="item-menu__text">
+													<p>
+														Tempura shrimp, cucumber, and avocado dance alongside sweet mango slices, drizzled with a tangy mango sauce.
+													</p>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="body-menu__item">
+										<a href="#" data-fls-menuitem="" class="item-menu item-menu__link" aria-label="Truffle Indulgence — $16">
+											<div class="item-menu__picture">
+												<picture>
+													<img alt="Truffle Indulgence" loading="lazy" src="./assets/img/menu/menu11.webp">
+												</picture>
+											</div>
+											<div class="item-menu__content">
+												<div class="item-menu__title">
+													<h3 class="item-menu__value --icon-leaf">Truffle Indulgence</h3>
+													<span class="item-menu__price">$16</span>
+												</div>
+												<div class="item-menu__text">
+													<p>
+														Decadent slices of black truffle grace a roll of succulent wagyu beef, cucumber, and microgreens, culminating in an exquisite umami symphony.
+													</p>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="body-menu__item">
+										<a href="#" data-fls-menuitem="" class="item-menu item-menu__link" aria-label="Pacific Firecracker — $16">
+											<div class="item-menu__picture">
+												<picture>
+													<img alt="Pacific Firecracker" loading="lazy" src="./assets/img/menu/menu12.webp">
+												</picture>
+											</div>
+											<div class="item-menu__content">
+												<div class="item-menu__title">
+													<h3 class="item-menu__value --icon-leaf">Pacific Firecracker</h3>
+													<span class="item-menu__price">$16</span>
+												</div>
+												<div class="item-menu__text">
+													<p>
+														Spicy crab salad, tempura shrimp, and jalapeño peppers combine in a fiery ensemble, accented with a chili-infused aioli.
+													</p>
+												</div>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</section>
+						</div>
+					</div>
+				</div>
+			</section>
+			<footer data-fls-footer="" class="footer">
+				<div class="footer__container"></div>
+			</footer>
+		</div>
+	</body>
+</html>

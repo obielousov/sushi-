@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<style data-fls-preloader="true" rel="preload">
+			body > *:not(.fls-preloader) {opacity: 0;visibility: hidden;}[data-fls-preloader-loaded] body > *:not(.fls-preloader) {transition: opacity 0.5s ease 0s;opacity: 1;visibility: visible;}
+		</style>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preload" href="./assets/fonts/Satoshi-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Satoshi-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Forum-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="shortcut icon" href="./assets/img/favicon.ico">
+		<title>Reservation</title>
+		<script type="module" crossorigin="" src="./js/reservation.js?v=1783603820904"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/preloader.js?v=1783603820904">
+		<link rel="stylesheet" crossorigin="" href="./css/preloader.css?v=1783603820904">
+		<link rel="stylesheet" crossorigin="" href="./css/reservation.css?v=1783603820904">
+		<link rel="stylesheet" crossorigin="" href="./css/title.css?v=1783603820904">
+		<link rel="stylesheet" crossorigin="" href="./css/inner.css?v=1783603820904">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header data-fls-header="" class="header">
+				<div class="header__container">
+					<div class="header__menu menu">
+						<button type="button" data-fls-menu="" class="menu__icon icon-menu" aria-label="Toggle menu">
+							<span></span>
+						</button>
+						<a href="/" class="header__logo">
+							<img src="./assets/img/logo.svg" alt="Qitchen">
+						</a>
+						<nav class="header__nav">
+							<a href="menupage.html" class="header__link">Menu</a>
+							<a href="about.html" class="header__link">About</a>
+						</nav>
+						<a href="reservation.html" class="header__cta">Book a Table</a>
+					</div>
+					<nav class="menu__body">
+						<div class="menu__container">
+							<div class="menu__decor">
+								<span class="menu__diamond"></span>
+								<span class="menu__line"></span>
+								<span class="menu__diamond"></span>
+							</div>
+							<ul class="menu__list">
+								<li>
+									<a href="menupage.html">Menu</a>
+								</li>
+								<li>
+									<a href="reservation.html">Reservation</a>
+								</li>
+								<li>
+									<a href="about.html">About</a>
+								</li>
+								<li>
+									<a href="contact.html">Contact</a>
+								</li>
+								<li>
+									<a href="blog.html">Blog</a>
+								</li>
+							</ul>
+							<div class="menu__decor">
+								<span class="menu__diamond"></span>
+								<span class="menu__line"></span>
+								<span class="menu__diamond"></span>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</header>
+			<section class="inner-page">
+				<div data-fls-pagebg="" class="pagebg">
+					<div class="pagebg__picture">
+						<picture>
+							<source media="(max-width: 600px)" srcset="./assets/img/book-a-table/book-a-tablebg-600.webp" type="image/webp">
+							<img alt="Reservation background" class="pagebg__image" src="./assets/img/book-a-table/book-a-tablebg.webp">
+						</picture>
+					</div>
+					<h1 class="pagebg__title">Book a Table</h1>
+				</div>
+				<div class="inner-page__body">
+					<div data-fls-reservation="" class="reservation__form form-reservation">
+						<header class="form-reservation__header">
+							<h2 data-fls-title="" id="reservation-heading" class="form-reservation-section__title section__title section__title--fz-40">Reservation</h2>
+							<div class="form-reservation__text">
+								<p>
+									Secure your spot at Qitchen, where exceptional sushi and a remarkable dining
+						experience await.
+								</p>
+							</div>
+						</header>
+						<form class="form-reservation__form form" aria-labelledby="reservation-heading" method="POST" novalidate>
+							<div class="form__inputs">
+								<label for="res-name" class="visually-hidden">Name</label>
+								<input id="res-name" required name="name" autocomplete="name" placeholder="Name" type="text" class="form__input input" aria-required="true">
+								<label for="res-phone" class="visually-hidden">Phone Number</label>
+								<input id="res-phone" required name="phone" autocomplete="tel" placeholder="Phone Number" type="tel" class="form__input input" aria-required="true">
+								<label for="res-email" class="visually-hidden">Email</label>
+								<input id="res-email" required name="email" autocomplete="email" placeholder="Email" type="email" class="form__input input" aria-required="true">
+							</div>
+							<div class="form__bottom">
+								<label for="res-guests" class="visually-hidden">Number of Guests</label>
+								<input id="res-guests" name="guests" autocomplete="off" placeholder="Guests" type="number" min="1" max="20" class="form__input input">
+								<label for="res-date" class="visually-hidden">Date</label>
+								<input id="res-date" data-fls-datepicker="" required name="date" autocomplete="off" placeholder="Date" type="text" class="form__input input" aria-required="true">
+								<label for="res-time" class="visually-hidden">Time</label>
+								<input id="res-time" required name="time" placeholder="Time" type="time" class="form__input input" aria-required="true">
+							</div>
+							<button type="submit" class="form__button">Reserve</button>
+						</form>
+					</div>
+				</div>
+			</section>
+			<footer data-fls-footer="" class="footer">
+				<div class="footer__container"></div>
+			</footer>
+		</div>
+	</body>
+</html>
