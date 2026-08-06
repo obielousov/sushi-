@@ -23,7 +23,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  aspect-ratio: 2/2;
+  aspect-ratio: 1;
   animation: pagebgZoom 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 .pagebg__title {
@@ -103,6 +103,7 @@
 @media (width >= 48em) {
   .pagebg__image {
     min-height: 100svh;
+    aspect-ratio: 2/1;
   }
 }
 @media (width >= 62em) {

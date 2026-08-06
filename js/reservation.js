@@ -1,4 +1,5 @@
 import "./preloader.js";
+import "./common.js";
 /* empty css      */
 /* empty css      */
 //#region \0rolldown/runtime.js

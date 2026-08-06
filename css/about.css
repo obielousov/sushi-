@@ -39,6 +39,7 @@
   line-height: 1.2;
   letter-spacing: 0.0625rem;
   text-transform: uppercase;
+  text-align: center;
   color: var(--title-color);
 }
 .item-about__text {

@@ -30,8 +30,7 @@
   border-radius: 1rem;
 }
 .contact__media {
-  display: grid;
-  gap: 0.75rem;
+  display: none;
 }
 .contact__media-item {
   position: relative;
@@ -50,17 +49,25 @@
 }
 .contact__media-item--ig::after {
   content: "\f103";
-  font-family: iconfont;
-  font-size: 1.875rem;
-  color: var(--title-color);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
+  width: fit-content;
+  height: fit-content;
+  font-family: iconfont;
+  font-size: 1.875rem;
+  color: var(--title-color);
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+html[data-fls-touch] .contact__media-item--ig::after {
+  right: 2%;
+  bottom: 2%;
+  top: initial;
+  left: initial;
 }
 .contact__info {
   padding-block: clamp(0.9375rem, -0.1983rem + 1.8319vw, 2rem); /* 32/15>1920-992 */
@@ -96,6 +103,9 @@
   display: flex;
   gap: 0.75rem;
   font-size: 1.125rem;
+}
+.contact__social-link {
+  transition: color 0.5s;
 }
 .contact__map {
   overflow: hidden;
@@ -267,15 +277,20 @@
     block-size: 25rem;
   }
 }
+@media (width >= 30em) {
+  .contact__media {
+    display: block;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+}
 @media (width >= 48em) {
   .contact__body {
     grid-template-columns: repeat(2, 1fr);
   }
   .contact__schedule {
     margin-top: 0;
-  }
-  .contact__media {
-    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (any-hover: hover), (pointer: fine) {
@@ -284,5 +299,8 @@
   }
   html:not([data-fls-touch]) .contact__media-item--ig:hover::after {
     opacity: 1;
+  }
+  html:not([data-fls-touch]) .contact__social-link:hover {
+    color: var(--title-color);
   }
 }

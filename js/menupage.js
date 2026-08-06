@@ -1,4 +1,5 @@
-import { n as getHash, r as gotoBlock, t as bodyUnlock } from "./preloader.js";
+import "./preloader.js";
+import { a as gotoBlock, i as getHash, r as bodyUnlock } from "./common.js";
 /* empty css      */
 /* empty css      */
 import "./watcher.js";

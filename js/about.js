@@ -1,4 +1,5 @@
 import "./preloader.js";
+import "./common.js";
 /* empty css      */
 //#region src/components/forms/rating/rating.js
 function formRating() {
