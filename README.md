@@ -50,7 +50,7 @@ https://obielousov.github.io/sushi-/
 Clone the repository:
 
 ```bash
-git clone https://obielousov.github.io/sushi-.git
+git clone https://github.com/obielousov/sushi-.git
 ```
 
 Open `index.html` in any modern browser.
