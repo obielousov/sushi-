@@ -23,7 +23,6 @@
   flex-direction: column;
 }
 .item-about__content {
-  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -33,6 +32,7 @@
   border-radius: 1rem;
 }
 .item-about__title {
+  margin-bottom: 1.25rem;
   font-family: var(--font-forum);
   font-size: clamp(1.375rem, 0.7069rem + 1.0776vw, 2rem); /* 32/22>1920-992 */
   font-weight: 400;
@@ -214,6 +214,12 @@
   }
   .item-about--reverse {
     flex-direction: row-reverse;
+  }
+  .item-about__content {
+    flex: 1;
+  }
+  .item-about__title {
+    margin-bottom: 0;
   }
 }
 @media (any-hover: hover) {

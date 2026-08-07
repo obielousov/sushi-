@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  height: 100%;
+  flex-grow: 1;
   padding-block: 2% clamp(0.9375rem, -0.9091rem + 4.9242vw, 5rem); /* 80/15>1920-600 */
   padding-inline: clamp(0.9375rem, -1.3636rem + 6.1364vw, 6rem); /* 96/15>1920-600 */
   border: 0.0625rem solid rgba(239, 231, 210, 0.15);
